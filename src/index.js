@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Operators from './components/Operators'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Operators/> {/*aqui eu coloquei o operators afim de executar a página do operators, mas poderia deixar o App */}
   </React.StrictMode>,
   document.getElementById('root')
 );

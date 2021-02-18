@@ -1,18 +1,13 @@
 import React from 'react'
 
-/*function Welcome()
-{
-    return <h1>Welcome to the site</h1>
-}*/
-
 const Greet = props => 
-{
-return (
-    <div>
-        <h1>Oi {props.name} a.k.a {props.heroName}</h1> 
-        {props.children}
-    </div>
-       )
+{ 
+return ( 
+        <div> {/*essa div é para deixar ter mais de 1 retorno de linha html*/}
+            <h1>Oi {props.name} {props.heroName}</h1> {/*o props name é pegando o parâmetro passado na página inicial html*/}  
+            {props.children} {/*o children é para exibir os componentes filhos na página que serão executados*/}                                  
+        </div>
+       ) 
 }
-
-export default Greet
+ 
+export default Greet /*está exportando a função Greet */

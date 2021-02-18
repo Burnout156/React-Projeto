@@ -4,8 +4,8 @@ class Welcome extends Component
 {
     render()
     {
-        return <h1>Sejam Bem vindo {this.props.name} a.k.a {this.props.heroName}</h1>
-    }
+        return <h1>Sejam Bem vindo {this.props.name} {this.props.heroName}</h1> /*exemplo de como pegar um parâmetro com props e inserir no texto html */
+    }  
 }
 
 export default Welcome

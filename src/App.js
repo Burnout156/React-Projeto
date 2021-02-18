@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
 import Greet from './components/Greet'
 import Welcome from './components/Welcome'
 import Hello from './components/Hello'
@@ -9,25 +9,25 @@ function App()
 {
   return (
     <div className="App">
-      <Greet name = "Bruno" heroName = "Fortão">
-        <p>
-          This is a Child Props
-        </p>
+      {/* <Greet name = "Bruno" heroName = "Fortão"> 
+        <Hello>
+        </Hello>
       </Greet>
       <Greet name = "Guacirema" heroName = "Gordinha">
-        <button>Ação</button>
+        <Hello>
+        </Hello>
       </Greet>
 
-      <Button onClick = {() => Soma(10, 1)} name = "Some"/>
+      <Button onClick = {() => Soma(10, 1)} name = "Some"/> {/*primeiro passo a função e depois o nome do botão*/}
 
 
       {/* <MyComponent/>*/}
       {/*<Welcome/>*/}
       {/*<Hello/>*/}
-      <Welcome name = "Bruno" heroName = "Fortão"/>
+      <Welcome name = "Bruno" heroName = "Fortão"/> {/*exemplo de como passar um parâmetro direto sem div */}
       <Welcome name = "Guacirema"/>
     </div>
-  );
+  ); 
 }
 
 function Soma(a, b)
