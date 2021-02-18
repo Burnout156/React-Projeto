@@ -6,7 +6,7 @@ import Operators from './components/Operators'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
+ <React.StrictMode>
     <Operators/> {/*aqui eu coloquei o operators afim de executar a página do operators, mas poderia deixar o App */}
   </React.StrictMode>,
   document.getElementById('root')
