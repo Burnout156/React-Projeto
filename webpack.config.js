@@ -1,10 +1,11 @@
 const path = require('path');
 
+
 module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: 'bundler.js'
     },
 
     module: {
@@ -12,10 +13,25 @@ module.exports = {
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader"
+                loader: "babel-loader",
+                
+                options: 
+                {
+                    presets: 
+                    [
+                      '@babel/preset-env',
+                       {
+                            plugins: 
+                            [
+                                '@babel/plugin-proposal-class-properties',
+                                '@babel/plugin-syntax-jsx'
+                            ]
+                       }
+                
+                    ]
                 }
             }
         ]
     }
+
 };

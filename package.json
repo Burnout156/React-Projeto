@@ -1,7 +1,7 @@
 {
   "name": "reacti",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
@@ -35,12 +35,36 @@
       "last 1 safari version"
     ]
   },
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-syntax-jsx"
+    ]
+  ],
   "devDependencies": {
     "@babel/core": "^7.12.17",
+    "@babel/plugin-proposal-class-properties": "^7.12.13",
+    "@babel/plugin-syntax-jsx": "^7.12.13",
     "@babel/preset-env": "^7.12.17",
     "@babel/preset-react": "^7.12.13",
     "babel-loader": "^8.2.2",
     "webpack": "^5.23.0",
     "webpack-cli": "^4.5.0"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Burnout156/React-Projeto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Burnout156/React-Projeto/issues"
+  },
+  "homepage": "https://github.com/Burnout156/React-Projeto#readme"
 }
