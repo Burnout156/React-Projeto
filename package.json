@@ -1,22 +1,19 @@
 {
-  "name": "reacti",
+  "name": "react-project",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
-    "@babel/plugin-transform-react-jsx": "^7.12.17",
-    "@testing-library/jest-dom": "^5.11.6",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.5.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "production": "cross-env NODE_ENV=production BABEL_ENV=production webpack --mode production",
-    "dev": "webpack --mode development",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -24,11 +21,6 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
-  },
-  "babel": {
-    "presets": [
-      "babel-preset-react-app"
     ]
   },
   "browserslist": {
@@ -42,32 +34,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@babel/core": "^7.12.17",
-    "@babel/preset-env": "^7.12.17",
-    "@babel/preset-react": "^7.12.13",
-    "babel-loader": "^8.1.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-react-app": "^10.0.0",
-    "cross-env": "^7.0.3",
-    "css-loader": "^5.0.2",
-    "html-loader": "^2.0.0",
-    "html-webpack-plugin": "^4.5.2",
-    "ts-loader": "^8.0.17",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^4.5.0"
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "webpack.config.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Burnout156/React-Projeto.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Burnout156/React-Projeto/issues"
-  },
-  "homepage": "https://github.com/Burnout156/React-Projeto#readme"
+  }
 }
