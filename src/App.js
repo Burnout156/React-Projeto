@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import './App.css'
+import Tarefas from './componentes/Tarefas';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App = () => {
+    const [tarefas, MudarMensagem] = useState([
+        {
+            id: "1",  
+            titulo: "Estudar Programação",
+            completo: false,
+        },
+
+        {
+            id: "2",  
+            titulo: "Ler Livros",
+            completo: true,
+        },
+    ]);
+
+    return(
+      <>
+        <div className = "container">
+          <Tarefas tarefas = {tarefas}/>
+        </div>
+      </>
+    )
 }
 
 export default App;
